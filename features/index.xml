@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Features on ALE Programming Language</title>
+    <link>https://echebbi.github.io/ale-lang-docs/features/</link>
+    <description>Recent content in Features on ALE Programming Language</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://echebbi.github.io/ale-lang-docs/features/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sirius integration</title>
+      <link>https://echebbi.github.io/ale-lang-docs/features/sirius-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/features/sirius-integration/</guid>
+      <description>Behavior layer ALE provides a Sirius layer called Behavior that enhances Sirius representations with attributes and methods defined in ALE source files.
+To activate this layer:
+ Right-click on the representation file (.aird) and select Viewpoints Selection Check Behavior then validate  It can now be shown from the toolbar of the diagram representation: // TODO: add an animated GIF to show the feature in action
+Behavior tools Not fully implemented yet.</description>
+    </item>
+    
+    <item>
+      <title>Java API</title>
+      <link>https://echebbi.github.io/ale-lang-docs/features/java-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/features/java-api/</guid>
+      <description>Run the ALE interpreter programmatically The AleInterpreter class provides a public API to interpret ALE scripts.
+It can be used as follows:
+// Retrieve:// - the .dsl file defining the metamodel and its behavior// - the .xmi file defining the model to executeIResource dslFile = ...String dslFileLocation = dslFile.getLocationURI().getPath();IResource xmiModelFile = ...String xmiModelFileLocation = xmiModelFile.getLocation().toString();// Initialize the ALE interpreterList&amp;lt;Object&amp;gt; args = List.</description>
+    </item>
+    
+    <item>
+      <title>Compilation to Java</title>
+      <link>https://echebbi.github.io/ale-lang-docs/features/compilation-to-java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/features/compilation-to-java/</guid>
+      <description>ALE Compiler The Action Language for EMF Compiler (ALEC) allows to compile ALE source files as Java code for better performances and integration with existing tools.
+Main features  Integration with Eclipse IDE: compile ALE behaviors in the Eclipse IDE Maven integration: automatically compile your behaviors using the ALE compiler Maven plugin Configurable: the ALE Compiler can target four implementation patterns: Interpreter, Visitor, EMF’s Switch and Revisitor  Prerequisites At the moment ALEC is not embedded within ALE and must be installed separately.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.65.3" />
+    <meta name="description" content="ALE Programming Language&#39;s Documentation">
+<meta name="author" content="The GEMOC Initiative">
+
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <title>Hello World! :: ALE Programming Language</title>
+
+    
+    <link href="../../css/nucleus.css?1582988856" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1582988856" rel="stylesheet">
+    <link href="../../css/hybrid.css?1582988856" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1582988856" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1582988856" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1582988856" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1582988856" rel="stylesheet">
+    <link href="../../css/theme.css?1582988856" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1582988856" rel="stylesheet">
+    
+
+    <script src="../../js/jquery-3.3.1.min.js?1582988856"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/getting-started/hello-world/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://echebbi.github.io/ale-lang-docs/"/>
+<img src="https://echebbi.github.io/ale-lang-docs/images/logo.png"/>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1582988856"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1582988856"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/echebbi.github.io\/ale-lang-docs\/";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1582988856"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-started/" title="Getting Started" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="../../getting-started/">
+          <b>1. </b>Getting Started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/installation/" title="Installation" class="dd-item ">
+        <a href="../../getting-started/installation/">
+        Installation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/hello-world/" title="Hello World!" class="dd-item active">
+        <a href="../../getting-started/hello-world/">
+        Hello World!
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/syntax-overview/" title="Language overview" class="dd-item ">
+        <a href="../../getting-started/syntax-overview/">
+        Language overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/features/" title="Features" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../features/">
+          <b>2. </b>Features
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/features/sirius-integration/" title="Sirius integration" class="dd-item ">
+        <a href="../../features/sirius-integration/">
+        Sirius integration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/features/java-api/" title="Java API" class="dd-item ">
+        <a href="../../features/java-api/">
+        Java API
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/features/compilation-to-java/" title="Compilation to Java" class="dd-item ">
+        <a href="../../features/compilation-to-java/">
+        Compilation to Java
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/tutorials/" title="Tutorials" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../tutorials/">
+          <b>3. </b>Tutorials
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorials/mini-fsm/" title="Mini-FSM Tutorial" class="dd-item ">
+        <a href="../../tutorials/mini-fsm/">
+        Mini-FSM Tutorial
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/reference/" title="Reference" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../reference/">
+          <b>4. </b>Reference
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/file-extensions/" title="File extensions" class="dd-item ">
+        <a href="../../reference/file-extensions/">
+        File extensions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/syntax/" title="Syntax" class="dd-item ">
+        <a href="../../reference/syntax/">
+        Syntax
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/gemoc/ale-lang"><i class='fab fa-github'></i> Github repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://echebbi.github.io/ale-lang-docs/research"><i class='fas fa-book'></i> Research</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="http://gemoc.org/studio.html"><img src="https://github.com/eclipse/gemoc-studio/raw/bae56c23dfe5e332137205bb55aa89c954809bee/gemoc_studio/plugins/org.eclipse.gemoc.gemoc_studio.branding/images/icons/IconeGemocStudio/png/IconeGemocStudio_16x16x32.png"/> GEMOC Studio</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <center>
+    
+    <a class="github-button" href="https://github.com/gemoc/ale-lang/releases" data-icon="octicon-cloud-download" aria-label="Download matcornic/hugo-theme-learn on GitHub">Download</a>
+
+    
+    <a class="github-button" href="https://github.com/gemoc/ale-lang" data-icon="octicon-star" data-show-count="true" aria-label="Star gemoc/ale-lang on GitHub">Star</a>
+
+    <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../'></a> > <a href='../../getting-started/'>Getting Started</a> > Hello World!
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#objectives">Objectives</a></li>
+    <li><a href="#get-the-helloworld-example">Get the HelloWorld example</a></li>
+    <li><a href="#what-we-have-inside">What we have inside</a></li>
+    <li><a href="#run">Run!</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Hello World!
+            </h1>
+          
+
+        
+
+
+
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Have at least a basic knowledge of <a href="https://www.eclipse.org/modeling/emf/">EMF (Eclipse Modeling Framework)</a>.</li>
+<li>Have <a href="../../getting-started/installation/">installed ALE</a>.</li>
+</ul>
+<h2 id="objectives">Objectives</h2>
+<ul>
+<li>Discover the structure of an ALE project through a built-in example.</li>
+<li>Launch your first ALE program.</li>
+</ul>
+<h2 id="get-the-helloworld-example">Get the HelloWorld example</h2>
+<p>ALE provides an <code>Hello world!</code> project template:</p>
+<ol>
+<li><code>File &gt; New &gt; Example...</code></li>
+<li><code>EcoreTools ALE Examples &gt; Hello world!</code></li>
+<li>Select <code>helloworld</code></li>
+<li><code>Finish</code></li>
+</ol>
+<p>After a few seconds a new project called <em>helloworld</em> should be created in your workspace. This project defines a simple <code>HelloWorld</code> EClass able to print &ldquo;Hello world!&quot;. The content of the project is presented below.</p>
+<h2 id="what-we-have-inside">What we have inside</h2>
+<p>The interesting files of the <code>helloworld</code> project are inside the <code>model</code> folder:</p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Defines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>HelloWorld.aird</em></td>
+<td>Graphical representation of <em>HelloWorld.ecore</em></td>
+</tr>
+<tr>
+<td><em>HelloWorld.ale</em></td>
+<td>Behavior of <em>HelloWorld.ecore</em></td>
+</tr>
+<tr>
+<td><em>HelloWorld.dsl</em></td>
+<td>Binding between the metamodel (<em>HelloWorld.ecore</em>) and its behavior (<em>HelloWorld.ale</em>)</td>
+</tr>
+<tr>
+<td><em>HelloWorld.ecore</em></td>
+<td>Metamodel describing the EClass HelloWorld</td>
+</tr>
+<tr>
+<td><em>HelloWorld.xmi</em></td>
+<td>Executable instance of the EClass HelloWorld</td>
+</tr>
+</tbody>
+</table>
+<p>By opening <em>HelloWorld.aird</em> you will see the <code>HelloWorld</code> EClass and its properties:</p>
+<p><img src="../../images/HelloWorld.png" alt="HelloWorld EClass"></p>
+<p>As you can see, all the members of <code>HelloWorld</code> are displayed in a bold font. That indicates that they are defined inside <em>HelloWorld.ale</em>.</p>
+
+<div class="notices tip" ><p>If the members are not shown make sure that <a href="../../features/sirius-integration/">the Behavior layer is activated</a>.</p>
+</div>
+
+<p><em>HelloWorld.ale</em> contains the following code:</p>
+<pre><code>behavior HelloWorld;
+
+open class HelloWorld {             // 1
+
+    String msg := 'Hello world!';   // 2
+
+    override EString greeting() {   // 3
+        result := self.msg;         // 4
+    }
+
+    @main                           // 5
+    def void main() {
+        self.greeting().log();      // 6
+    }
+}
+</code></pre><ul style="list-style:none">
+ <li>① Indicate that we modify the <code>HelloWorld</code> EClass.</li> 
+ <li>② Declare a <i>new</i> attribute of type <code>String</code>. Defining <code>msg</code> within <i>HelloWorls.ale</i> makes it a runtime data. In other words, it does not exist in the metamodel and will be created by the ALE interpreter during the execution.</li>
+ <li>③ Specify the behavior of the <code>greeting</code> operation.</li>
+ <li>④ Return the value of the <code>msg</code> attribute (there is no <code>return</code> statement in ALE).</li>
+ <li>⑤ Indicate that the <code>main</code> operation is the entry point of the execution and should be called by the ALE interpreter.</li>
+ <li>⑥ Print "Hello world!".</li>
+</ul>
+
+<div class="notices tip" ><p>See the <a href="../../reference/">Reference chapter</a> for a detailed overview of ALE&rsquo;s syntax.</p>
+</div>
+
+<h2 id="run">Run!</h2>
+<p>The execution can be launched through the contextual menu:</p>
+<ol>
+<li>Right-click on <em>HelloWorld.dsl</em></li>
+<li>Select <code>Run As &gt; ALE launch</code>, a dialog should open asking you to select the model to interpret</li>
+<li>Make sure <em>HelloWorld.xmi</em> is selected then click on <code>OK</code>.</li>
+<li>Witness the result on the console:</li>
+</ol>
+<pre><code>Run helloworld.dsl
+------------
+Hello world!
+</code></pre><h2 id="conclusion">Conclusion</h2>
+<p>You should now have an idea of what can be achieved with ALE. Move on the <a href="../../getting-started/syntax-overview/">next topic for an overview of ALE&rsquo;s syntax</a>.</p>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../getting-started/installation/" title="Installation"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../getting-started/syntax-overview/" title="Language overview" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1582988856"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1582988856"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1582988856"></script>
+    <script src="../../js/jquery.sticky.js?1582988856"></script>
+    <script src="../../js/featherlight.min.js?1582988856"></script>
+    <script src="../../js/highlight.pack.js?1582988856"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1582988856"></script>
+    <script src="../../js/learn.js?1582988856"></script>
+    <script src="../../js/hugo-learn.js?1582988856"></script>
+
+    <link href="../../mermaid/mermaid.css?1582988856" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1582988856"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

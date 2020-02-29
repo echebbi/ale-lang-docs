@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on ALE Programming Language</title>
+    <link>https://echebbi.github.io/ale-lang-docs/getting-started/</link>
+    <description>Recent content in Getting Started on ALE Programming Language</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Feb 2020 13:49:58 +0100</lastBuildDate>
+    
+	<atom:link href="https://echebbi.github.io/ale-lang-docs/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installation</title>
+      <link>https://echebbi.github.io/ale-lang-docs/getting-started/installation/</link>
+      <pubDate>Fri, 28 Feb 2020 13:49:58 +0100</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/getting-started/installation/</guid>
+      <description>Install ALE from its update site 1. Install Eclipse IDE The recommended package is Eclipse IDE for Java and DSL developers.
+2. Install Sirius 6.0.0  Open Eclipse IDE Go to Help &amp;gt; Install New Software... Copy Sirius 6.0.0 update site&amp;rsquo;s URL in the Work with textbox  http://download.eclipse.org/sirius/updates/releases/6.0.0/photon/   Hit Enter and wait for the list to load Check Sirius Core Runtime Click Next and Finish  3. Install ALE  Open Eclipse IDE Go to Help &amp;gt; Install New Software.</description>
+    </item>
+    
+    <item>
+      <title>Hello World!</title>
+      <link>https://echebbi.github.io/ale-lang-docs/getting-started/hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/getting-started/hello-world/</guid>
+      <description>Requirements  Have at least a basic knowledge of EMF (Eclipse Modeling Framework). Have installed ALE.  Objectives  Discover the structure of an ALE project through a built-in example. Launch your first ALE program.  Get the HelloWorld example ALE provides an Hello world! project template:
+ File &amp;gt; New &amp;gt; Example... EcoreTools ALE Examples &amp;gt; Hello world! Select helloworld Finish  After a few seconds a new project called helloworld should be created in your workspace.</description>
+    </item>
+    
+    <item>
+      <title>Language overview</title>
+      <link>https://echebbi.github.io/ale-lang-docs/getting-started/syntax-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/getting-started/syntax-overview/</guid>
+      <description>ALE is an interpreted, object-oriented and statically typed language. It shares a lot of its syntax with the Acceleo Query Language (AQL) that it actually uses under the hood.
+A comprehensive guide of ALE&amp;rsquo;s syntax can be found in the Reference chapter.
+Object-Oriented Classes In ALE, classes can be defined with the class keyword:
+class Sun {}A corresponding EClass is created at runtime by ALE&amp;rsquo;s interpreter. The open keyword must be used to refer to an EClass that already exist in the Ecore model:</description>
+    </item>
+    
+  </channel>
+</rss>

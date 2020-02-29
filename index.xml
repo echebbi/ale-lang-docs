@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ALE Programming Language</title>
+    <link>https://echebbi.github.io/ale-lang-docs/</link>
+    <description>Recent content on ALE Programming Language</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Feb 2020 13:49:58 +0100</lastBuildDate>
+    
+	<atom:link href="https://echebbi.github.io/ale-lang-docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Installation</title>
+      <link>https://echebbi.github.io/ale-lang-docs/getting-started/installation/</link>
+      <pubDate>Fri, 28 Feb 2020 13:49:58 +0100</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/getting-started/installation/</guid>
+      <description>Install ALE from its update site 1. Install Eclipse IDE The recommended package is Eclipse IDE for Java and DSL developers.
+2. Install Sirius 6.0.0  Open Eclipse IDE Go to Help &amp;gt; Install New Software... Copy Sirius 6.0.0 update site&amp;rsquo;s URL in the Work with textbox  http://download.eclipse.org/sirius/updates/releases/6.0.0/photon/   Hit Enter and wait for the list to load Check Sirius Core Runtime Click Next and Finish  3. Install ALE  Open Eclipse IDE Go to Help &amp;gt; Install New Software.</description>
+    </item>
+    
+    <item>
+      <title>File extensions</title>
+      <link>https://echebbi.github.io/ale-lang-docs/reference/file-extensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/reference/file-extensions/</guid>
+      <description>This chapter presents all the files used to configure ALE.
+ DSL file (.dsl) This file describes a Domain Specific Language (DSL) made executable with ALE. Its file extension is dsl.
+It defines both the abstract syntax (Ecore models) and the semantics (ALE source files) of the DSL.
+It is a standard Java properties file (i.e. a textual file where each line follows the syntax key=value)
+A typical DSL files contains the following entries:</description>
+    </item>
+    
+    <item>
+      <title>Mini-FSM Tutorial</title>
+      <link>https://echebbi.github.io/ale-lang-docs/tutorials/mini-fsm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/tutorials/mini-fsm/</guid>
+      <description>Objectives  Learn how to make an Ecore model executable.  This is not a tutorial about EMF and some basic knowledge is expected. You can learn more about EMF on Vogella or on EclipseSource
+Introduction For this first tutorial we&amp;rsquo;ll implement a simple FSM. So, what is it?
+Wikipedia’s definition:
+ [A FSM] is a mathematical model of computation. It is an abstract machine that can be in exactly one of a finite number of states at any given time.</description>
+    </item>
+    
+    <item>
+      <title>Sirius integration</title>
+      <link>https://echebbi.github.io/ale-lang-docs/features/sirius-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/features/sirius-integration/</guid>
+      <description>Behavior layer ALE provides a Sirius layer called Behavior that enhances Sirius representations with attributes and methods defined in ALE source files.
+To activate this layer:
+ Right-click on the representation file (.aird) and select Viewpoints Selection Check Behavior then validate  It can now be shown from the toolbar of the diagram representation: // TODO: add an animated GIF to show the feature in action
+Behavior tools Not fully implemented yet.</description>
+    </item>
+    
+    <item>
+      <title>Hello World!</title>
+      <link>https://echebbi.github.io/ale-lang-docs/getting-started/hello-world/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/getting-started/hello-world/</guid>
+      <description>Requirements  Have at least a basic knowledge of EMF (Eclipse Modeling Framework). Have installed ALE.  Objectives  Discover the structure of an ALE project through a built-in example. Launch your first ALE program.  Get the HelloWorld example ALE provides an Hello world! project template:
+ File &amp;gt; New &amp;gt; Example... EcoreTools ALE Examples &amp;gt; Hello world! Select helloworld Finish  After a few seconds a new project called helloworld should be created in your workspace.</description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>https://echebbi.github.io/ale-lang-docs/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/research/</guid>
+      <description>ALE is the result of research conducted at Inria DiverSE team. It is used to define Domain-Specific Languages (DSLs): the Ecore model and the ALE source files being respectively the abstract syntax and the semantics of those DSLs.
+See below for a list of related publications.
+Publications Manuel Leduc, Gwendal Jouneaux, Thomas Degueule, Gurvan Le Guernic, Olivier Barais, Benoît Combemale
+Automatic generation of Truffle-based interpreters for Domain-Specific Languages
+[preprint]
+Manuel Leduc, Thomas Degueule, Benoit Combemale, Tijs van der Storm, Olivier Barais</description>
+    </item>
+    
+    <item>
+      <title>Syntax</title>
+      <link>https://echebbi.github.io/ale-lang-docs/reference/syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/reference/syntax/</guid>
+      <description>Reserved keywords The following table lists ALE&amp;rsquo;s reserved keywords. They cannot be use to name attributes, classes or operations.
+   Keyword Purpose     behavior Defines the semantics&amp;rsquo; namespace   class Declares a new class   def Defines an operation   else Declares a condition statement   extends Declares a class&amp;rsquo; super class   false Represents a false expression   for Iterates on a collection of items   if Declares a conditional statement   null Represents non-existing value   open Enhances an existing class with new features   opposite Indicates that a reference is bidirectional   override Specifies the semantics of an existing operation   self Represents the current instance   true Represents a true expression   unique Indicates that a collection should not contain duplicates   use Imports a Java service    The word result is also reserved inside an operation.</description>
+    </item>
+    
+    <item>
+      <title>Java API</title>
+      <link>https://echebbi.github.io/ale-lang-docs/features/java-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/features/java-api/</guid>
+      <description>Run the ALE interpreter programmatically The AleInterpreter class provides a public API to interpret ALE scripts.
+It can be used as follows:
+// Retrieve:// - the .dsl file defining the metamodel and its behavior// - the .xmi file defining the model to executeIResource dslFile = ...String dslFileLocation = dslFile.getLocationURI().getPath();IResource xmiModelFile = ...String xmiModelFileLocation = xmiModelFile.getLocation().toString();// Initialize the ALE interpreterList&amp;lt;Object&amp;gt; args = List.</description>
+    </item>
+    
+    <item>
+      <title>Language overview</title>
+      <link>https://echebbi.github.io/ale-lang-docs/getting-started/syntax-overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/getting-started/syntax-overview/</guid>
+      <description>ALE is an interpreted, object-oriented and statically typed language. It shares a lot of its syntax with the Acceleo Query Language (AQL) that it actually uses under the hood.
+A comprehensive guide of ALE&amp;rsquo;s syntax can be found in the Reference chapter.
+Object-Oriented Classes In ALE, classes can be defined with the class keyword:
+class Sun {}A corresponding EClass is created at runtime by ALE&amp;rsquo;s interpreter. The open keyword must be used to refer to an EClass that already exist in the Ecore model:</description>
+    </item>
+    
+    <item>
+      <title>Compilation to Java</title>
+      <link>https://echebbi.github.io/ale-lang-docs/features/compilation-to-java/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/features/compilation-to-java/</guid>
+      <description>ALE Compiler The Action Language for EMF Compiler (ALEC) allows to compile ALE source files as Java code for better performances and integration with existing tools.
+Main features  Integration with Eclipse IDE: compile ALE behaviors in the Eclipse IDE Maven integration: automatically compile your behaviors using the ALE compiler Maven plugin Configurable: the ALE Compiler can target four implementation patterns: Interpreter, Visitor, EMF’s Switch and Revisitor  Prerequisites At the moment ALEC is not embedded within ALE and must be installed separately.</description>
+    </item>
+    
+  </channel>
+</rss>

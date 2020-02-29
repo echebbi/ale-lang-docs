@@ -1,0 +1,1873 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.65.3" />
+    <meta name="description" content="ALE Programming Language&#39;s Documentation">
+<meta name="author" content="The GEMOC Initiative">
+
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <title>Syntax :: ALE Programming Language</title>
+
+    
+    <link href="../../css/nucleus.css?1582988856" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1582988856" rel="stylesheet">
+    <link href="../../css/hybrid.css?1582988856" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1582988856" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1582988856" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1582988856" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1582988856" rel="stylesheet">
+    <link href="../../css/theme.css?1582988856" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1582988856" rel="stylesheet">
+    
+
+    <script src="../../js/jquery-3.3.1.min.js?1582988856"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/reference/syntax/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://echebbi.github.io/ale-lang-docs/"/>
+<img src="https://echebbi.github.io/ale-lang-docs/images/logo.png"/>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1582988856"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1582988856"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/echebbi.github.io\/ale-lang-docs\/";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1582988856"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-started/" title="Getting Started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../getting-started/">
+          <b>1. </b>Getting Started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/installation/" title="Installation" class="dd-item ">
+        <a href="../../getting-started/installation/">
+        Installation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/hello-world/" title="Hello World!" class="dd-item ">
+        <a href="../../getting-started/hello-world/">
+        Hello World!
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/syntax-overview/" title="Language overview" class="dd-item ">
+        <a href="../../getting-started/syntax-overview/">
+        Language overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/features/" title="Features" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../features/">
+          <b>2. </b>Features
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/features/sirius-integration/" title="Sirius integration" class="dd-item ">
+        <a href="../../features/sirius-integration/">
+        Sirius integration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/features/java-api/" title="Java API" class="dd-item ">
+        <a href="../../features/java-api/">
+        Java API
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/features/compilation-to-java/" title="Compilation to Java" class="dd-item ">
+        <a href="../../features/compilation-to-java/">
+        Compilation to Java
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/tutorials/" title="Tutorials" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../../tutorials/">
+          <b>3. </b>Tutorials
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorials/mini-fsm/" title="Mini-FSM Tutorial" class="dd-item ">
+        <a href="../../tutorials/mini-fsm/">
+        Mini-FSM Tutorial
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/reference/" title="Reference" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="../../reference/">
+          <b>4. </b>Reference
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/file-extensions/" title="File extensions" class="dd-item ">
+        <a href="../../reference/file-extensions/">
+        File extensions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/syntax/" title="Syntax" class="dd-item active">
+        <a href="../../reference/syntax/">
+        Syntax
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/gemoc/ale-lang"><i class='fab fa-github'></i> Github repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://echebbi.github.io/ale-lang-docs/research"><i class='fas fa-book'></i> Research</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="http://gemoc.org/studio.html"><img src="https://github.com/eclipse/gemoc-studio/raw/bae56c23dfe5e332137205bb55aa89c954809bee/gemoc_studio/plugins/org.eclipse.gemoc.gemoc_studio.branding/images/icons/IconeGemocStudio/png/IconeGemocStudio_16x16x32.png"/> GEMOC Studio</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <center>
+    
+    <a class="github-button" href="https://github.com/gemoc/ale-lang/releases" data-icon="octicon-cloud-download" aria-label="Download matcornic/hugo-theme-learn on GitHub">Download</a>
+
+    
+    <a class="github-button" href="https://github.com/gemoc/ale-lang" data-icon="octicon-star" data-show-count="true" aria-label="Star gemoc/ale-lang on GitHub">Star</a>
+
+    <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../'></a> > <a href='../../reference/'>Reference</a> > Syntax
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#reserved-keywords">Reserved keywords</a></li>
+    <li><a href="#built-in-types">Built-in types</a></li>
+    <li><a href="#operators">Operators</a></li>
+    <li><a href="#expressions">Expressions</a></li>
+    <li><a href="#comments">Comments</a>
+      <ul>
+        <li><a href="#simple-and-multi-line-comments">Simple and multi-line comments</a></li>
+        <li><a href="#documentation">Documentation</a></li>
+      </ul>
+    </li>
+    <li><a href="#statements">Statements</a></li>
+    <li><a href="#statement">Statement</a>
+      <ul>
+        <li><a href="#variable-declaration">Variable declaration</a></li>
+        <li><a href="#variable-assignment">Variable assignment</a></li>
+        <li><a href="#block-statement">Block statement</a></li>
+        <li><a href="#condition-statement">Condition statement</a></li>
+        <li><a href="#iteration-statement">Iteration statement</a></li>
+        <li><a href="#loop-statement">Loop statement</a></li>
+      </ul>
+    </li>
+    <li><a href="#classes-and-operations">Classes and operations</a>
+      <ul>
+        <li><a href="#creating-a-new-class">Creating a new class</a></li>
+        <li><a href="#defining-operations">Defining operations</a></li>
+        <li><a href="#instanciating-an-eclass">Instanciating an EClass</a></li>
+        <li><a href="#importing-an-existing-class">Importing an existing class</a></li>
+      </ul>
+    </li>
+    <li><a href="#open-class">Open Class</a>
+      <ul>
+        <li><a href="#open-classes">Open classes</a></li>
+        <li><a href="#declaring-a-new-attribute">Declaring a new attribute</a></li>
+        <li><a href="#declaring-bidirectional-references">Declaring bidirectional references</a></li>
+        <li><a href="#declaring-a-set">Declaring a set</a></li>
+        <li><a href="#implementing-an-eoperation">Implementing an EOperation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Syntax
+            </h1>
+          
+
+        
+
+
+
+<h2 id="reserved-keywords">Reserved keywords</h2>
+<p>The following table lists ALE&rsquo;s reserved keywords. They cannot be use to name attributes, classes or operations.</p>
+<table>
+<thead>
+<tr>
+<th>Keyword</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>behavior</td>
+<td>Defines the semantics&rsquo; namespace</td>
+</tr>
+<tr>
+<td><a href="#creating-a-new-class">class</a></td>
+<td>Declares a new class</td>
+</tr>
+<tr>
+<td><a href="#defining-operations">def</a></td>
+<td>Defines an operation</td>
+</tr>
+<tr>
+<td><a href="#condition-statement">else</a></td>
+<td>Declares a condition statement</td>
+</tr>
+<tr>
+<td><a href="#inheriting-open-classes">extends</a></td>
+<td>Declares a class&rsquo; super class</td>
+</tr>
+<tr>
+<td>false</td>
+<td>Represents a false expression</td>
+</tr>
+<tr>
+<td><a href="#iteration-statement">for</a></td>
+<td>Iterates on a collection of items</td>
+</tr>
+<tr>
+<td><a href="#condition-statement">if</a></td>
+<td>Declares a conditional statement</td>
+</tr>
+<tr>
+<td>null</td>
+<td>Represents non-existing value</td>
+</tr>
+<tr>
+<td><a href="#open-classes">open</a></td>
+<td>Enhances an existing class with new features</td>
+</tr>
+<tr>
+<td><a href="#declaring-bidirectional-references">opposite</a></td>
+<td>Indicates that a reference is bidirectional</td>
+</tr>
+<tr>
+<td><a href="#implementing-an-eoperation">override</a></td>
+<td>Specifies the semantics of an existing operation</td>
+</tr>
+<tr>
+<td>self</td>
+<td>Represents the current instance</td>
+</tr>
+<tr>
+<td>true</td>
+<td>Represents a true expression</td>
+</tr>
+<tr>
+<td><a href="#declaring-a-set">unique</a></td>
+<td>Indicates that a collection should not contain duplicates</td>
+</tr>
+<tr>
+<td><a href="#calling-java-code">use</a></td>
+<td>Imports a Java service</td>
+</tr>
+</tbody>
+</table>
+
+<div class="notices info" ><p>The word <code>result</code> is also reserved inside an operation. See <a href="#defining-operations">defining operations</a> for further details.</p>
+</div>
+
+<h2 id="built-in-types">Built-in types</h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+<th>Instantiation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Integer</td>
+<td>A number without decimal part</td>
+<td><code>int a := 12</code></td>
+</tr>
+<tr>
+<td>Real</td>
+<td>A number with decimal part</td>
+<td><code>double r := 23.5</code></td>
+</tr>
+<tr>
+<td>String</td>
+<td>A sequence of characters</td>
+<td><code>String str := 'Hello World!'</code></td>
+</tr>
+<tr>
+<td>Boolean</td>
+<td>Either true of false</td>
+<td><code>boolean b := true</code></td>
+</tr>
+<tr>
+<td>Sequence</td>
+<td>An ordered collection of elements</td>
+<td><code>Sequence(Integer) numbers = Sequence{1, 2, 3}</code></td>
+</tr>
+<tr>
+<td>OrderedSet</td>
+<td>An ordered collection of unique elements</td>
+<td><code>OrderedSet(String) users = OrderedSet{'Foo', 'Bar'}</code></td>
+</tr>
+</tbody>
+</table>
+
+<div class="notices tip" ><p>Looking for types&rsquo; default value? See <a href="#variable-declaration">variable declaration</a>.</p>
+</div>
+
+<h2 id="operators">Operators</h2>
+<p>Operators on primitive types:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Priority</th>
+<th align="center">Operator</th>
+<th>Operand Types</th>
+<th align="center">Syntax</th>
+<th>Semantic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">+</td>
+<td>Numeric</td>
+<td align="center"><code>&lt;op1&gt;</code> + <code>&lt;op2&gt;</code></td>
+<td>Add two numeric values</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">-</td>
+<td>Numeric</td>
+<td align="center"><code>&lt;op1&gt;</code> - <code>&lt;op2&gt;</code></td>
+<td>Substract two numeric values</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">*</td>
+<td>Numeric</td>
+<td align="center"><code>&lt;op1&gt;</code> * <code>&lt;op2&gt;</code></td>
+<td>Multiply two numeric values</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">/</td>
+<td>Numeric</td>
+<td align="center"><code>&lt;op1&gt;</code> / <code>&lt;op2&gt;</code></td>
+<td>Divide <code>&lt;op1&gt;</code> by <code>&lt;op2&gt;</code></td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">+=</td>
+<td>Numeric (<code>&lt;op1&gt;</code> must be a l-value)</td>
+<td align="center"><code>&lt;op1&gt;</code> += <code>&lt;op2&gt;</code></td>
+<td>Set <code>&lt;op1&gt;</code> to <code>&lt;op1&gt;</code> + <code>&lt;op2&gt;</code></td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">-=</td>
+<td>Numeric (<code>&lt;op1&gt;</code> must be a l-value)</td>
+<td align="center"><code>&lt;op1&gt;</code> -= <code>&lt;op2&gt;</code></td>
+<td>Set <code>&lt;op1&gt;</code> to <code>&lt;op1&gt;</code> - <code>&lt;op2&gt;</code></td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">*=</td>
+<td>Numeric (<code>&lt;op1&gt;</code> must be a l-value)</td>
+<td align="center"><code>&lt;op1&gt;</code> *= <code>&lt;op2&gt;</code></td>
+<td>Set <code>&lt;op1&gt;</code> to <code>&lt;op1&gt;</code> * <code>&lt;op2&gt;</code></td>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">/=</td>
+<td>Numeric (<code>&lt;op1&gt;</code> must be a l-value)</td>
+<td align="center"><code>&lt;op1&gt;</code> /= <code>&lt;op2&gt;</code></td>
+<td>Set <code>&lt;op1&gt;</code> to <code>&lt;op1&gt;</code> / <code>&lt;op2&gt;</code></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">&lt;</td>
+<td>Numeric</td>
+<td align="center"><code>&lt;op1&gt;</code> &lt; <code>&lt;op2&gt;</code></td>
+<td>True if <code>&lt;op1&gt;</code> is lower than <code>&lt;op2&gt;</code></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">&gt;</td>
+<td>Numeric</td>
+<td align="center"><code>&lt;op1&gt;</code> &gt; <code>&lt;op2&gt;</code></td>
+<td>True if <code>&lt;op1&gt;</code> is greater than <code>&lt;op2&gt;</code></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">&lt;=</td>
+<td>Numeric</td>
+<td align="center"><code>&lt;op1&gt;</code> &lt;= <code>&lt;op2&gt;</code></td>
+<td>True if <code>&lt;op1&gt;</code> is strictly lower than <code>&lt;op2&gt;</code></td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">&gt;=</td>
+<td>Numeric</td>
+<td align="center"><code>&lt;op1&gt;</code> &gt;= <code>&lt;op2&gt;</code></td>
+<td>True if <code>&lt;op1&gt;</code> is strictly greater than <code>&lt;op2&gt;</code></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">+</td>
+<td>String</td>
+<td align="center"><code>&lt;op1&gt;</code> + <code>&lt;op2&gt;</code></td>
+<td>Concatenate two strings</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">+=</td>
+<td>String (<code>&lt;op1&gt;</code> must be a l-value)</td>
+<td align="center"><code>&lt;op1&gt;</code> += <code>&lt;op2&gt;</code></td>
+<td>Set <code>&lt;op1&gt;</code> to <code>&lt;op1&gt;</code> + <code>&lt;op2&gt;</code></td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">not</td>
+<td>Boolean</td>
+<td align="center">not <code>&lt;op&gt;</code></td>
+<td>True if <code>&lt;op&gt;</code> is false. False if <code>&lt;op&gt;</code> operand is true</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">and</td>
+<td>Boolean</td>
+<td align="center"><code>&lt;op1&gt;</code> and <code>&lt;op2&gt;</code></td>
+<td>True if both operands are evaluated to true</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">or</td>
+<td>Boolean</td>
+<td align="center"><code>&lt;op1&gt;</code> or <code>&lt;op2&gt;</code></td>
+<td>True if at least one of its operands is evaluated to true</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">xor</td>
+<td>Boolean</td>
+<td align="center"><code>&lt;op1&gt;</code> xor <code>&lt;op2&gt;</code></td>
+<td>True if either <code>&lt;op1&gt;</code> or <code>&lt;op2&gt;</code> is true, but not both</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center">implies</td>
+<td>Boolean</td>
+<td align="center"><code>&lt;op1&gt;</code> implies <code>&lt;op2&gt;</code></td>
+<td>True if <code>&lt;op1&gt;</code> is false, equals to <code>&lt;op2&gt;</code> otherwise</td>
+</tr>
+</tbody>
+</table>
+<p>Operators on collections:</p>
+<table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Operator</th>
+<th>Syntax</th>
+<th>Operand Types</th>
+<th>Semantic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>?</td>
+<td>in</td>
+<td><code>&lt;item&gt;</code> in <code>&lt;collection&gt;</code></td>
+<td>All, Collection</td>
+<td>Provide an iterator in <a href="#loop-statement">for loops</a></td>
+</tr>
+<tr>
+<td>?</td>
+<td>contains</td>
+<td><code>&lt;collection&gt;</code> contains <code>&lt;item&gt;</code></td>
+<td>?</td>
+<td>True if <code>&lt;item&gt;</code> can be found in <code>&lt;collection&gt;</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>+=</td>
+<td><code>&lt;collection&gt;</code> += <code>item</code></td>
+<td>Collection(T), T</td>
+<td>Add <code>&lt;item&gt;</code> to <code>&lt;collection&gt;</code></td>
+</tr>
+<tr>
+<td>5</td>
+<td>-=</td>
+<td><code>&lt;collection&gt;</code> -= <code>item</code></td>
+<td>Collection(T), T</td>
+<td>Remove <code>&lt;item&gt;</code> from <code>&lt;collection&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<p>Global operators:</p>
+<table>
+<thead>
+<tr>
+<th>Priority</th>
+<th>Operator</th>
+<th>Operand Types</th>
+<th>Syntax</th>
+<th>Semantic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>=</td>
+<td>All</td>
+<td><code>&lt;op1&gt;</code> = <code>&lt;op2&gt;</code></td>
+<td>True if <code>&lt;op1&gt;</code> is equal to <code>&lt;op2&gt;</code> (using Java&rsquo;s <code>equals</code>)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>!=</td>
+<td>All</td>
+<td><code>&lt;op1&gt;</code> != <code>&lt;op2&gt;</code></td>
+<td>True if <code>&lt;op1&gt;</code> is not equal to <code>&lt;op2&gt;</code> (using Java&rsquo;s <code>equals</code>)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>&lt;&gt;</td>
+<td>All</td>
+<td><code>&lt;op1&gt;</code> &lt;&gt; <code>&lt;op2&gt;</code></td>
+<td>True if <code>&lt;op1&gt;</code> is not equal to <code>&lt;op2&gt;</code> (using Java&rsquo;s <code>equals</code>)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>:=</td>
+<td>All (<code>&lt;op1&gt;</code> must be a l-value)</td>
+<td><code>&lt;op1&gt;</code> := <code>&lt;op2&gt;</code></td>
+<td>Set <code>&lt;op2&gt;</code> as the value of <code>&lt;op1&gt;</code></td>
+</tr>
+</tbody>
+</table>
+
+<div class="notices note" ><p>As stated in the <a href="#expressions">Expressions section</a> ALE relies on the AQL interpreter. As a result, most of these keywords are actually AQL keywords.</p>
+</div>
+
+<p>Parenthesis <code>()</code> can be used to change the priority of evaluation:</p>
+<pre><code>2 + 3 * 5   = 17;     // true
+(2 + 3) * 5 = 25;     // true
+</code></pre><h2 id="expressions">Expressions</h2>
+<p>Expressions are anything that returns a value. For instance:</p>
+<pre><code>true                     // the boolean true
+1 + 5                    // 6
+isVerbose or isDebug     // conditional boolean
+</code></pre>
+<div class="notices info" ><p>Expressions are evaluated thanks to the AQL interpreter and must hence be valid AQL expressions. See <a href="#aql">AQL</a> for an overview of the language.</p>
+</div>
+
+<h2 id="comments">Comments</h2>
+<h3 id="simple-and-multi-line-comments">Simple and multi-line comments</h3>
+<p>Simple line comments start with <code>//</code>:</p>
+<pre><code>// This is a comment
+String name := &quot;Foo&quot;; // This is another comment at the end of a line
+</code></pre><p>Multi-ligne comments are written between <code>/*</code> and <code>*/</code>:</p>
+<pre><code>/* 
+ * This comment
+ * is on
+ * several lines.
+ */
+</code></pre><h3 id="documentation">Documentation</h3>
+<p>Documentation for classes, attributes and operations can be written between <code>/**</code> and <code>*/</code>:</p>
+<pre><code>/**
+ * The time before droping the request.
+ */
+int timeoutInMs := 10;
+</code></pre>
+<div class="notices note" ><p>At the moment this documentation is not leveraged at all.</p>
+</div>
+
+<h2 id="statements">Statements</h2>
+<h2 id="statement">Statement</h2>
+<p>A statement is an instruction understandable by the ALE interpreter. A statement always ends with a semicolon (<code>;</code>):</p>
+<pre><code>self.greeting().log();
+int length := 12;
+</code></pre><h3 id="variable-declaration">Variable declaration</h3>
+<p>A variable can be declared either within a class or an operation body. It follows the following syntax:</p>
+<pre><code>&lt;type&gt; &lt;var_name&gt; [:= &lt;initial_value&gt;];
+</code></pre><p><code>&lt;type&gt;</code> is the type of the variable.</p>
+<p><code>&lt;var_name&gt;</code> is a unique string identifying the variable. Two different variables with the same name cannot be defined in the same scope.</p>
+<p><code>&lt;initial_value&gt;</code> is an expression specifying the value of the variable. It must match <code>&lt;type&gt;</code>. It is optional; the following table list the default value given to the variable according to its type:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Integer</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Boolean</td>
+<td>false</td>
+</tr>
+<tr>
+<td>String</td>
+<td>'&rsquo;</td>
+</tr>
+<tr>
+<td>Any other</td>
+<td>null</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>int localVar;        // set to 0
+int otherVar := 2;   // set to 2
+</code></pre>
+    </div>
+</div>
+<h3 id="variable-assignment">Variable assignment</h3>
+<p>The <code>:=</code> operators allows to assign a value to a variable. It follows the following syntax:</p>
+<pre><code>&lt;var_name&gt; := &lt;expression&gt;;
+</code></pre><p><code>&lt;var_name&gt;</code> is the identifier used to declare the variable.</p>
+<p><code>&lt;expression&gt;</code> is the value that must take the variable. It must match the type of the variable.</p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>aString := 'hello';
+anInteger := 42;
+</code></pre>
+    </div>
+</div>
+
+<div class="notices warning" ><p>The assignment operator <code>:=</code> must not be confused with the comparison operator <code>=</code> used in expressions.</p>
+</div>
+
+<h3 id="block-statement">Block statement</h3>
+<p>In ALE, the scope of a variable is determined by the block within which it has been declared. A block is defined between <code>{</code> and <code>}</code>.</p>
+<h3 id="condition-statement">Condition statement</h3>
+<p>The <code>if</code> keyword allows to specify a condition before executing a block:</p>
+<pre><code>if (&lt;guard&gt;) {
+    // execute if the guard is true
+}
+</code></pre><p><code>&lt;guard&gt;</code> is any expression that can be evaluated to true.</p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>Boolean isRaining := true;
+
+if (isRaining) {
+    self.getFluffyUmbrella();
+}
+</code></pre>
+    </div>
+</div>
+<p>The <code>else</code> keyword allows to execute a block if the guard evaluates to false. <code>else</code> can only be written after the <code>}</code> closing <code>if</code>'s block.</p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>String weather := 'sunny';
+String raining := 'raining';
+
+if (weather = raining) {
+    self.getFluffyUmbrella();
+}
+else {
+    self.enjoySunshine();
+}
+</code></pre>
+    </div>
+</div>
+<h3 id="iteration-statement">Iteration statement</h3>
+<p>The <code>for</code> keyword allows to execute a block for each element of a collection:</p>
+<pre><code>for (&lt;item&gt; in &lt;collection&gt;) {
+    // executed for each element of the collection
+}
+</code></pre><p><code>&lt;item&gt;</code> is the name of a new variable that will take successively the value of each element of the collection. Only accessible within <code>for</code>'s block.</p>
+<p><code>&lt;collection&gt;</code> is an existing variable which multiplicity is greater than 1, such as a sequence or a set.</p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>Sequence(String) names := Sequence{'Foo', 'Bar'};
+
+for (name in names) {
+    name.log(); // Print &quot;Foo&quot; on the first iteration then &quot;Bar&quot;
+}
+</code></pre>
+    </div>
+</div>
+<p>It is also possible to iterate over a sequence of integers with a range comprehension (<code>[&lt;min&gt;..&lt;max&gt;]</code>):</p>
+<pre><code>for (i in [1..5]) {
+    ('' + i).log(); // Print &quot;1&quot;, then &quot;2&quot;, etc.
+}
+</code></pre><h3 id="loop-statement">Loop statement</h3>
+<p>The <code>while</code> keyword allows to execute a block until a condition is evaluated to false. It follows the following syntax:</p>
+<pre><code>while (&lt;condition&gt;) {
+    
+}
+</code></pre><p><code>&lt;condition&gt;</code> is any expression that can be evaluated as a boolean.</p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>while (isRaining) {
+    self.keepUmbrellaOpened();
+}
+</code></pre>
+    </div>
+</div>
+<h2 id="classes-and-operations">Classes and operations</h2>
+<h3 id="creating-a-new-class">Creating a new class</h3>
+<p>The <code>class</code> keyword allows to define a new class. It follows the following syntax:</p>
+<pre><code>class &lt;class_name&gt; {
+
+}
+</code></pre><p><code>&lt;class_name&gt;</code> is a valid Java identifier.</p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>/**
+ * A class that only exists during the runtime.
+ */
+class State {
+
+}
+</code></pre>
+    </div>
+</div>
+<p>Unlike <a href="#opening-a-class">open classes</a>, these classes only exist at runtime, when the ALE interpreter is running. Such classes typically do not make sense as part of a model but are useful during the execution (e.g. for state management purposes).</p>
+<h3 id="defining-operations">Defining operations</h3>
+<p>The <code>def</code> keyword allows to define new operations. It follows the following syntax:</p>
+<pre><code>def &lt;return_type&gt; &lt;op_name&gt;([&lt;param_type&gt; &lt;param_name&gt;]*) {
+
+}
+</code></pre><p><code>&lt;return_type&gt;</code> defines the type of the value returned by the operation.</p>
+<p><code>&lt;op_name&gt;</code> is a string uniquely identifying the operation.</p>
+<p><code>&lt;param_type&gt; &lt;param_name&gt;</code> define the type and the name of a parameter. Parameters are optional and separated by commas (<code>,</code>).</p>
+<p>An operation must be defined within a class body.</p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>open class Vector {
+    def int add(int a, int b) {
+        result := self.a + self.b;
+    }
+}
+</code></pre>
+    </div>
+</div>
+<p><code>result</code> is a special variable which is only accessible within an operation body. It stores the result of the operation and is automatically returned at the end of the operation body. As such, it replaces the <code>return</code> keyword used by a lot of programming languages.</p>
+<p>Within a method, one can refer to the current instance with the <code>self</code> keyword. It allows to access instance&rsquo;s attributes and call instance&rsquo;s operations.</p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>open class User {
+    def String fullname() {
+        result := self.firstname + ' ' + self.lastname;
+    }
+}
+</code></pre>
+    </div>
+</div>
+<p>Unlike <a href="#implementing-an-eoperation">overridden methods</a>, these methods only exist at runtime, when the ALE interpreter is running. Semantically, that means that their are not part of DSL&rsquo;s abstract syntax but are still useful during the development.</p>
+<h3 id="instanciating-an-eclass">Instanciating an EClass</h3>
+<p><code>create()</code> is a Java service (see <a href="#calling-java-code">Call Java code</a>) that is automatically added by ALE to every EClass and which allows to create a new instance. It follows the following syntax:</p>
+<pre><code>&lt;class_name&gt; &lt;var_name&gt; := &lt;package_name&gt;::&lt;class_name&gt;.create();
+</code></pre><p><code>&lt;class_name&gt;</code> is the Java name of the class to instantiate.</p>
+<p><code>&lt;var_name&gt;</code> is the name of the variable that stores the new instance.</p>
+<p><code>&lt;package_name&gt;</code> is the Java package in which the class lies.</p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>HelloWorld world := helloworld::HelloWorld.create();
+</code></pre>
+    </div>
+</div>
+<h3 id="importing-an-existing-class">Importing an existing class</h3>
+<p>The <code>import</code> keyword allows to use classes defined in another file. It follows the following syntax:</p>
+<pre><code>import &lt;behavior&gt; as &lt;alias&gt;
+</code></pre><p><code>&lt;behavior&gt;</code> is the ID of the behavior to which the class belongs.</p>
+<p><code>&lt;alias&gt;</code> is the name under which the behavior is known in the current file.</p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>behavior fsm.composite.executable;
+
+import fsm.executable as fsm;
+
+open class Start {
+
+    @main
+    def void run()
+        fsm.State initial = fsm::State.create();
+    }
+}
+</code></pre>
+    </div>
+</div>
+<h2 id="open-class">Open Class</h2>
+<p>This chapter binds ALE&rsquo;s syntax with EMF concepts and explains how the ALE script can affect a metamodel at runtime.</p>
+<hr>
+<h3 id="open-classes">Open classes</h3>
+<p>The <code>open</code> keyword allows to re-open an existing EClass to add new elements and implement existing EOperations. We call such classes: &ldquo;<strong>open classes</strong>&quot;. It follows the following syntax:</p>
+<pre><code>behavior &lt;EClass_package&gt;
+
+open class &lt;EClass&gt; {
+
+}
+</code></pre>
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>behavior helloworld;
+
+open class HelloWorld {
+
+}
+</code></pre>
+    </div>
+</div>
+
+<div class="notices info" ><p>An <em>.ale</em> file can declare only one <code>open class</code> per EClass.</p>
+</div>
+
+<h3 id="declaring-a-new-attribute">Declaring a new attribute</h3>
+<p><a href="#variable-declaration">Creating a variable</a> in the body of an opened in fact adds a new attribute to the weaved EClass. If the feature is a primitive (boolean, int, string, etc.) it is inferred as an EAttribute. Otherwise it is inferred as an EReference.</p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>open class FSM {
+    State currentState;
+
+    override void on(String event) {
+        if (event = 'right-click') {
+            self.currentState := fsm::MoveState.create();
+        }
+    }
+}
+</code></pre>
+    </div>
+</div>
+
+<div class="notices tip" ><p>The new feature should be runtime specific, such as adding a currentState inside a Finite State Machine.</p>
+</div>
+
+<p>A multiplicity can be specified to indicate that the attribute represents several values. It follows the following syntax:</p>
+<pre><code>&lt;min&gt;..&lt;max&gt; &lt;type&gt; &lt;name&gt;;
+</code></pre><p><code>&lt;min&gt;</code> is the minimum number of values in the attribute.</p>
+<p><code>&lt;max&gt;</code> is the maximum number of values. <code>*</code> indicates any number of values.</p>
+<p><code>&lt;type&gt;</code> is the type of the values acceptable in the attribute.</p>
+<p><code>&lt;name&gt;</code> is the name of the attribute.</p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>open class FSM {
+    0..* State states;
+
+    override def addState(State newState) {
+        self.states += newState;
+    }
+
+    def void display() {
+        for (State state in self.states) {
+            state.display();
+        }
+    }
+}
+</code></pre>
+    </div>
+</div>
+<h3 id="declaring-bidirectional-references">Declaring bidirectional references</h3>
+<p>The <code>opposite</code> keyword allows to declare a bidirectional reference. It is equivalent to the EMF opposite relation. It follows the following syntax:</p>
+<pre><code>opposite &lt;var_name_in_opposite_class&gt; &lt;opposite_class&gt; &lt;var_name_in_class&gt;;
+</code></pre><p><code>&lt;opposite_class&gt;</code> is the name of the class with which the bidirectional must be set.</p>
+<p><code>&lt;var_name_in_opposite_class&gt;</code> is the name of the variable holding the reference to the current class in the opposite class.</p>
+<p><code>&lt;var_name_in_class&gt;</code> is the name of the variable holding the reference in the current EClass.</p>
+
+<div class="notices warning" ><p>An opposite reference must be declared in <strong>both classes</strong>.</p>
+</div>
+
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>class ParentNode {
+    // can be accessed with self.child
+    opposite parent ChildNode child;
+}
+
+class ChildNode {
+    // can be accessed with self.parent
+    opposite child ParentNode parent;
+}
+</code></pre>
+    </div>
+</div>
+<h3 id="declaring-a-set">Declaring a set</h3>
+<p>The <code>unique</code> keyword allows to declare a multiplicity-many attribute that should only store unique values. Values are compared thanks to their Java <code>equals</code> method. It is equivalent to the EMF unique feature. It follows the following syntax:</p>
+<pre><code>unique &lt;multiplicity&gt; &lt;type&gt; &lt;var_name&gt;
+</code></pre><p><code>&lt;multiplicity&gt;</code> is the multiplicity of the attribute (see <a href="#declaring-a-new-attribute">declaring a new attribute</a>). It must be a many multiplicity.</p>
+<p><code>&lt;type&gt;</code> is the type of the elements contained in the collection.</p>
+<p><code>&lt;var_name&gt;</code> is the name of the variable holding the reference.</p>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>class Parent {
+    unique 0..* Child children;    
+}
+</code></pre>
+    </div>
+</div>
+<h3 id="implementing-an-eoperation">Implementing an EOperation</h3>
+<p>The <code>override</code> keyword allows to implement the behavior of an EOperation declared in the ECore metamodel of the weaved EClass. We call such operations: &ldquo;<strong>overridden operations</strong>&quot;. It follows the following syntax:</p>
+<pre><code>override &lt;type&gt; &lt;name&gt;([&lt;param_type&gt; &lt;param_name&gt;]*) {
+   &lt;statement&gt;*
+}
+</code></pre><p><code>&lt;type&gt;</code> is the type of the value returned by the operation.</p>
+<p><code>&lt;name&gt;</code> is the name of the operation.</p>
+<p><code>&lt;param_type&gt; &lt;param_name&gt;</code> define the type and the name of a parameter. Parameters are optional and separated by commas (<code>,</code>).</p>
+<p><code>&lt;stamement&gt;</code> is an arbitrary number of <a href="#statements">statements</a>.</p>
+
+<div class="notices info" ><p>An overridden operation can only be declared within an open class an must have the exact same signature as an existing EOperation from the weaved EClass or one of its super types.</p>
+</div>
+
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>open class Circle {
+    override int circumference() {
+        double PI := 3.14159;
+        result := self.radius * PI * 2;
+    }
+}
+</code></pre><p>{% /unsafeExpand %}</p>
+<div class="notices tip" ><p>See also <a href="#defining-operations">defining operations</a> for further details about operation syntax.</p>
+</div>
+<h3 id="inheriting-open-classes">Inheriting open classes</h3>
+<p>The <code>extends</code> keyword allows to extend an open class with another open class.</p>
+<p>When writing an Open Class you may want to specialize one (or more) existing open class.
+The new Open Class reuses all the inherited content, declares new features/operations and refines body of inherited operations.</p>
+<p>The extended open class have to be weaved on the same EClass (or super type) of the current open class.</p>
+<p>It follows the following syntax:</p>
+<pre><code>open class &lt;name&gt; extends &lt;open_class_1&gt;[, &lt;open_class_n&gt;]* {
+
+}
+</code></pre><p><code>&lt;name&gt;</code> is the name of the extending class.</p>
+<p><code>&lt;open_class_1&gt;</code> is the name of the open class being extended. An open class may inherit from several open classes; in such a case the name of the extended classes must be separated by commas (<code>,</code>).</p>
+<p>Any open class from the same file can be extended.</p>
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+<pre><code>    &lt;b&gt;Example&lt;/b&gt;
+	
+    &lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;expand-content&quot; style=&quot;display: none;&quot;&gt;
+    &lt;pre&gt;&lt;code&gt;open class State {
+override String execute() {
+    result := 'State ' + self.name;
+}
+</code></pre>
+<p>}</p>
+<p>open class Initial extends State {
+override String execute() {
+result := &lsquo;Initial State ' + self.name;
+}
+}
+</code></pre>
+</div></p>
+</div>
+<p>Classes from other files can be extended too but must be imported first (see <a href="#importing-an-existing-class">importing an existing class</a>).</p>
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+<pre><code>    &lt;b&gt;Example&lt;/b&gt;
+	
+    &lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;expand-content&quot; style=&quot;display: none;&quot;&gt;
+    &lt;pre&gt;&lt;code&gt;behavior fsm.composite.executable;
+</code></pre>
+<p>import fsm.executable as simplefsm;</p>
+<p>open class CompositeState extends simplefsm.State {
+override void exec() {
+// Redefine the behavior here
+}
+}
+</code></pre>
+</div></p>
+</div>
+<hr>
+<h2 id="aql">AQL</h2>
+<p>Some cheatsheets on AQL expressions</p>
+<p>See <a href="https://www.eclipse.org/acceleo/documentation/aql.html#SyntaxReference">AQL syntax reference</a> for more details.</p>
+<h3 id="type-of">Type of</h3>
+<pre><code>anEPackage.oclIsKindOf(ecore::ENamedElement) //true
+anEPackage.oclIsTypeOf(ecore::ENamedElement) //false
+</code></pre><h3 id="services-for-collections">Services for collections</h3>
+<pre><code>OrderedSet{'a', 'b', 'c'} + OrderedSet{'c', 'b', 'f'}
+Sequence{'a', 'b', 'c'}-&gt;any(str | str.size() = 1)
+Sequence{'a', 'b', 'c'}-&gt;asOrderedSet()
+OrderedSet{'a', 'b', 'c'}-&gt;asSequence()
+Sequence{'a', 'b', 'c', 'c', 'a'}-&gt;asSet()
+Sequence{'a', 'b', 'c'}-&gt;at(1)
+Sequence{'a', 'b', 'c'}-&gt;collect(str | str.toUpper())
+OrderedSet{'a', 'b', 'c'}-&gt;concat(Sequence{'d', 'e'})
+OrderedSet{'a', 'b', 'c'}-&gt;count('d')
+Sequence{'a', 'b', 'c'}-&gt;excludes('a')
+Sequence{'a', 'b'}-&gt;excludesAll(OrderedSet{'a','f'})
+OrderedSet{'a', 'b', 'c'}-&gt;excluding('c')
+Sequence{'a', 'b', 'c'}-&gt;exists(str | str.size() &gt; 5)
+Sequence{anEClass, anEAttribute}-&gt;filter(ecore::EStructuralFeature)
+Sequence{'a', 'b', 'c'}-&gt;first()
+Sequence{'a', 'b', 'c'}-&gt;forAll(str | str.size() = 1)
+Sequence{'a', 'b', 'c'}-&gt;includes('d')
+Sequence{'a', 'b', 'c'}-&gt;includesAll(OrderedSet{'a', 'f'})
+OrderedSet{1, 2, 3, 4}-&gt;indexOf(3)
+OrderedSet{'a', 'b', 'c'}-&gt;insertAt(2, 'f')
+OrderedSet{'a', 'b', 'c'}-&gt;intersection(OrderedSet{'a', 'f'})
+OrderedSet{'a', 'b', 'c'}-&gt;isEmpty()
+Sequence{'a', 'b', 'c'}-&gt;isUnique(str | str.size())
+Sequence{'a', 'b', 'c'}-&gt;last()
+OrderedSet{'a', 'b', 'c'}-&gt;notEmpty()
+Sequence{'a', 'b', 'c'}-&gt;one(str | str.equals('a'))
+OrderedSet{'a', 'b', 'c'}-&gt;prepend('f')
+OrderedSet{'a', 'b', 'c'}-&gt;reject(str | str.equals('a'))
+OrderedSet{'a', 'b', 'c'}-&gt;reverse()
+Sequence{'a', 'b', 'c'}-&gt;select(str | str.equals('a'))
+Sequence{'a', 'b', 'c'}-&gt;sep('[', '-', ']')
+Sequence{'a', 'b', 'c'}-&gt;sep('-')
+Sequence{'a', 'b', 'c'}-&gt;size()
+Sequence{'aa', 'bbb', 'c'}-&gt;sortedBy(str | str.size())
+Sequence{'a', 'b', 'c'} - Sequence{'c', 'b', 'f'}
+OrderedSet{'a', 'b', 'c'}-&gt;subOrderedSet(1, 2)
+Sequence{'a', 'b', 'c'}-&gt;subSequence(1, 2)
+Sequence{1, 2, 3, 4}-&gt;sum()
+Sequence{'a', 'b', 'c'}-&gt;union(Sequence{'d', 'c'})
+</code></pre><hr>
+<h2 id="misc">Misc</h2>
+<h3 id="calling-java-code">Calling Java code</h3>
+<p>ALE offers the possibility to call static methods written in Java from the body of an EOperation.</p>
+<p>For example let&rsquo;s assume that you have a Java class <code>MyService</code> providing the method <code>foo()</code>:</p>
+<pre><code>package some.packagename;
+
+public class MyService {
+
+    // By convention the caller object is the first argument
+    public static void foo(EObject caller) {
+        System.out.println(&quot;Foo: &quot;+ caller.eClass().getName());
+    }
+
+}
+</code></pre><p>You can call <code>foo()</code> on any EObject just by importing the class <code>MyService</code> with the keyword <code>use</code> at the beginning of your <code>.ale</code> file.
+The only requirement is that <code>MyService</code> has to be in the classpath of your project.</p>
+<pre><code>use some.packagename.MyService; //Import external Java services
+
+    open class FSM {
+        def void callJavaFoo() {
+            self.states.forAll(state | state.foo());
+        }
+    }
+
+</code></pre><h3 id="printing-to-the-console">Printing to the console</h3>
+<p>ALE provides the <code>log()</code> method that can be used on String instances to print themselves to the console.</p>
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+<pre><code>    &lt;b&gt;Example&lt;/b&gt;
+	
+    &lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;expand-content&quot; style=&quot;display: none;&quot;&gt;
+    &lt;pre&gt;&lt;code&gt;'Hello World!'.log();
+</code></pre>
+<p>(&rsquo;&rsquo; + 42).log();
+</code></pre>
+</div></p>
+</div>
+    </div>
+</div>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../reference/file-extensions/" title="File extensions"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../reference/file-extensions/" title="File extensions" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1582988856"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1582988856"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1582988856"></script>
+    <script src="../../js/jquery.sticky.js?1582988856"></script>
+    <script src="../../js/featherlight.min.js?1582988856"></script>
+    <script src="../../js/highlight.pack.js?1582988856"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1582988856"></script>
+    <script src="../../js/learn.js?1582988856"></script>
+    <script src="../../js/hugo-learn.js?1582988856"></script>
+
+    <link href="../../mermaid/mermaid.css?1582988856" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1582988856"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

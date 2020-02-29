@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://echebbi.github.io/ale-lang-docs/getting-started/</loc>
+    <lastmod>2020-02-28T13:49:58+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://echebbi.github.io/ale-lang-docs/getting-started/installation/</loc>
+    <lastmod>2020-02-28T13:49:58+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://echebbi.github.io/ale-lang-docs/reference/file-extensions/</loc>
+  </url>
+  
+  <url>
+    <loc>https://echebbi.github.io/ale-lang-docs/tutorials/mini-fsm/</loc>
+  </url>
+  
+  <url>
+    <loc>https://echebbi.github.io/ale-lang-docs/features/sirius-integration/</loc>
+  </url>
+  
+  <url>
+    <loc>https://echebbi.github.io/ale-lang-docs/features/</loc>
+  </url>
+  
+  <url>
+    <loc>https://echebbi.github.io/ale-lang-docs/getting-started/hello-world/</loc>
+  </url>
+  
+  <url>
+    <loc>https://echebbi.github.io/ale-lang-docs/research/</loc>
+  </url>
+  
+  <url>
+    <loc>https://echebbi.github.io/ale-lang-docs/reference/syntax/</loc>
+  </url>
+  
+  <url>
+    <loc>https://echebbi.github.io/ale-lang-docs/features/java-api/</loc>
+  </url>
+  
+  <url>
+    <loc>https://echebbi.github.io/ale-lang-docs/getting-started/syntax-overview/</loc>
+  </url>
+  
+  <url>
+    <loc>https://echebbi.github.io/ale-lang-docs/tutorials/</loc>
+  </url>
+  
+  <url>
+    <loc>https://echebbi.github.io/ale-lang-docs/reference/</loc>
+  </url>
+  
+  <url>
+    <loc>https://echebbi.github.io/ale-lang-docs/features/compilation-to-java/</loc>
+  </url>
+  
+  <url>
+    <loc>https://echebbi.github.io/ale-lang-docs/</loc>
+    <lastmod>2020-02-28T13:49:58+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://echebbi.github.io/ale-lang-docs/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://echebbi.github.io/ale-lang-docs/tags/</loc>
+  </url>
+  
+</urlset>

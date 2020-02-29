@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.65.3" />
+    <meta name="description" content="ALE Programming Language&#39;s Documentation">
+<meta name="author" content="The GEMOC Initiative">
+
+    <link rel="icon" href="../images/favicon.png" type="image/png">
+
+    <title>Tutorials :: ALE Programming Language</title>
+
+    
+    <link href="../css/nucleus.css?1582988856" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1582988856" rel="stylesheet">
+    <link href="../css/hybrid.css?1582988856" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1582988856" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1582988856" rel="stylesheet">
+    <link href="../css/auto-complete.css?1582988856" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1582988856" rel="stylesheet">
+    <link href="../css/theme.css?1582988856" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1582988856" rel="stylesheet">
+    
+
+    <script src="../js/jquery-3.3.1.min.js?1582988856"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+        :not(pre) > code + span.copy-to-clipboard {
+            display: none;
+        }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/tutorials/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://echebbi.github.io/ale-lang-docs/"/>
+<img src="https://echebbi.github.io/ale-lang-docs/images/logo.png"/>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../js/lunr.min.js?1582988856"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1582988856"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/echebbi.github.io\/ale-lang-docs\/";
+    
+</script>
+<script type="text/javascript" src="../js/search.js?1582988856"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-started/" title="Getting Started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../getting-started/">
+          <b>1. </b>Getting Started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/installation/" title="Installation" class="dd-item ">
+        <a href="../getting-started/installation/">
+        Installation
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/hello-world/" title="Hello World!" class="dd-item ">
+        <a href="../getting-started/hello-world/">
+        Hello World!
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/syntax-overview/" title="Language overview" class="dd-item ">
+        <a href="../getting-started/syntax-overview/">
+        Language overview
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/features/" title="Features" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../features/">
+          <b>2. </b>Features
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/features/sirius-integration/" title="Sirius integration" class="dd-item ">
+        <a href="../features/sirius-integration/">
+        Sirius integration
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/features/java-api/" title="Java API" class="dd-item ">
+        <a href="../features/java-api/">
+        Java API
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/features/compilation-to-java/" title="Compilation to Java" class="dd-item ">
+        <a href="../features/compilation-to-java/">
+        Compilation to Java
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/tutorials/" title="Tutorials" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="../tutorials/">
+          <b>3. </b>Tutorials
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/tutorials/mini-fsm/" title="Mini-FSM Tutorial" class="dd-item ">
+        <a href="../tutorials/mini-fsm/">
+        Mini-FSM Tutorial
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/reference/" title="Reference" class="dd-item 
+        
+        
+        
+        ">
+      <a href="../reference/">
+          <b>4. </b>Reference
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/file-extensions/" title="File extensions" class="dd-item ">
+        <a href="../reference/file-extensions/">
+        File extensions
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/syntax/" title="Syntax" class="dd-item ">
+        <a href="../reference/syntax/">
+        Syntax
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/gemoc/ale-lang"><i class='fab fa-github'></i> Github repo</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://echebbi.github.io/ale-lang-docs/research"><i class='fas fa-book'></i> Research</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="http://gemoc.org/studio.html"><img src="https://github.com/eclipse/gemoc-studio/raw/bae56c23dfe5e332137205bb55aa89c954809bee/gemoc_studio/plugins/org.eclipse.gemoc.gemoc_studio.branding/images/icons/IconeGemocStudio/png/IconeGemocStudio_16x16x32.png"/> GEMOC Studio</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <center>
+    
+    <a class="github-button" href="https://github.com/gemoc/ale-lang/releases" data-icon="octicon-cloud-download" aria-label="Download matcornic/hugo-theme-learn on GitHub">Download</a>
+
+    
+    <a class="github-button" href="https://github.com/gemoc/ale-lang" data-icon="octicon-star" data-show-count="true" aria-label="Star gemoc/ale-lang on GitHub">Star</a>
+
+    <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='../'></a> > Tutorials
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+          <div id="chapter">
+        
+        <div id="body-inner">
+          
+
+        
+
+
+
+
+	<h3 id="chapter-3">Chapter 3</h3>
+<h1 id="tutorials">Tutorials</h1>
+<p>Follow the guide to unveil ALE&rsquo;s full potential.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+            </div> 
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../features/compilation-to-java/" title="Compilation to Java"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../tutorials/mini-fsm/" title="Mini-FSM Tutorial" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../js/clipboard.min.js?1582988856"></script>
+    <script src="../js/perfect-scrollbar.min.js?1582988856"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1582988856"></script>
+    <script src="../js/jquery.sticky.js?1582988856"></script>
+    <script src="../js/featherlight.min.js?1582988856"></script>
+    <script src="../js/highlight.pack.js?1582988856"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../js/modernizr.custom-3.6.0.js?1582988856"></script>
+    <script src="../js/learn.js?1582988856"></script>
+    <script src="../js/hugo-learn.js?1582988856"></script>
+
+    <link href="../mermaid/mermaid.css?1582988856" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js?1582988856"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>

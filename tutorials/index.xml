@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on ALE Programming Language</title>
+    <link>https://echebbi.github.io/ale-lang-docs/tutorials/</link>
+    <description>Recent content in Tutorials on ALE Programming Language</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://echebbi.github.io/ale-lang-docs/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mini-FSM Tutorial</title>
+      <link>https://echebbi.github.io/ale-lang-docs/tutorials/mini-fsm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/tutorials/mini-fsm/</guid>
+      <description>Objectives  Learn how to make an Ecore model executable.  This is not a tutorial about EMF and some basic knowledge is expected. You can learn more about EMF on Vogella or on EclipseSource
+Introduction For this first tutorial we&amp;rsquo;ll implement a simple FSM. So, what is it?
+Wikipedia’s definition:
+ [A FSM] is a mathematical model of computation. It is an abstract machine that can be in exactly one of a finite number of states at any given time.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reference on ALE Programming Language</title>
+    <link>https://echebbi.github.io/ale-lang-docs/reference/</link>
+    <description>Recent content in Reference on ALE Programming Language</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://echebbi.github.io/ale-lang-docs/reference/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>File extensions</title>
+      <link>https://echebbi.github.io/ale-lang-docs/reference/file-extensions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/reference/file-extensions/</guid>
+      <description>This chapter presents all the files used to configure ALE.
+ DSL file (.dsl) This file describes a Domain Specific Language (DSL) made executable with ALE. Its file extension is dsl.
+It defines both the abstract syntax (Ecore models) and the semantics (ALE source files) of the DSL.
+It is a standard Java properties file (i.e. a textual file where each line follows the syntax key=value)
+A typical DSL files contains the following entries:</description>
+    </item>
+    
+    <item>
+      <title>Syntax</title>
+      <link>https://echebbi.github.io/ale-lang-docs/reference/syntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/reference/syntax/</guid>
+      <description>Reserved keywords The following table lists ALE&amp;rsquo;s reserved keywords. They cannot be use to name attributes, classes or operations.
+   Keyword Purpose     behavior Defines the semantics&amp;rsquo; namespace   class Declares a new class   def Defines an operation   else Declares a condition statement   extends Declares a class&amp;rsquo; super class   false Represents a false expression   for Iterates on a collection of items   if Declares a conditional statement   null Represents non-existing value   open Enhances an existing class with new features   opposite Indicates that a reference is bidirectional   override Specifies the semantics of an existing operation   self Represents the current instance   true Represents a true expression   unique Indicates that a collection should not contain duplicates   use Imports a Java service    The word result is also reserved inside an operation.</description>
+    </item>
+    
+  </channel>
+</rss>
