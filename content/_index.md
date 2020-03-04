@@ -2,7 +2,7 @@
 
 The [Action Language for EMF (ALE)](https://github.com/gemoc/ale-lang) is a language used to make Ecore metamodels executable. Define the behavior of your models in a dedicated, interpreted and object-oriented language and **run it in minutes!**
 
-![ALE allows to weave behavior into Ecore models](images/overview.png)
+![ALE allows to weave behavior into Ecore models](https://raw.githubusercontent.com/gemoc/ale-lang/master/docs/img/demo.gif)
 
 {{% notice tip %}}
 With ALE, you can execute your models right from your IDE: you no longer need to spend time generating and tweaking Java code!
