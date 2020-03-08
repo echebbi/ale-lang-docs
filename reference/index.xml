@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Reference on ALE Programming Language</title>
+    <title>Language Reference on ALE Programming Language</title>
     <link>https://echebbi.github.io/ale-lang-docs/reference/</link>
-    <description>Recent content in Reference on ALE Programming Language</description>
+    <description>Recent content in Language Reference on ALE Programming Language</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -31,6 +31,16 @@ A typical DSL files contains the following entries:</description>
       <guid>https://echebbi.github.io/ale-lang-docs/reference/syntax/</guid>
       <description>Reserved keywords The following table lists ALE&amp;rsquo;s reserved keywords. They cannot be use to name attributes, classes or operations.
    Keyword Purpose     behavior Defines the semantics&amp;rsquo; namespace   class Declares a new class   def Defines an operation   else Declares a condition statement   extends Declares a class&amp;rsquo; super class   false Represents a false expression   for Iterates on a collection of items   if Declares a conditional statement   null Represents non-existing value   open Enhances an existing class with new features   opposite Indicates that a reference is bidirectional   override Specifies the semantics of an existing operation   self Represents the current instance   true Represents a true expression   unique Indicates that a collection should not contain duplicates   use Imports a Java service    The word result is also reserved inside an operation.</description>
+    </item>
+    
+    <item>
+      <title>AQL cheatsheets</title>
+      <link>https://echebbi.github.io/ale-lang-docs/reference/aql_cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/reference/aql_cheatsheet/</guid>
+      <description>See AQL syntax reference for an in-depth presentation of the language.
+ Type of anEPackage.oclIsKindOf(ecore::ENamedElement) // trueanEPackage.oclIsTypeOf(ecore::ENamedElement) // falseServices for collections OrderedSet{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;} + OrderedSet{&#39;c&#39;, &#39;b&#39;, &#39;f&#39;}Sequence{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;any(str | str.size() = 1)Sequence{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;asOrderedSet()OrderedSet{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;asSequence()Sequence{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;c&#39;, &#39;a&#39;}-&amp;gt;asSet()Sequence{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;at(1)Sequence{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;collect(str | str.toUpper())OrderedSet{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;concat(Sequence{&#39;d&#39;, &#39;e&#39;})OrderedSet{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;count(&#39;d&#39;)Sequence{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;excludes(&#39;a&#39;)Sequence{&#39;a&#39;, &#39;b&#39;}-&amp;gt;excludesAll(OrderedSet{&#39;a&#39;,&#39;f&#39;})OrderedSet{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;excluding(&#39;c&#39;)Sequence{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;exists(str | str.</description>
     </item>
     
   </channel>
