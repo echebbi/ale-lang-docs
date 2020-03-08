@@ -12,18 +12,18 @@
     <title>Syntax :: ALE Programming Language</title>
 
     
-    <link href="../../css/nucleus.css?1582988856" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1582988856" rel="stylesheet">
-    <link href="../../css/hybrid.css?1582988856" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1582988856" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1582988856" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1582988856" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1582988856" rel="stylesheet">
-    <link href="../../css/theme.css?1582988856" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1582988856" rel="stylesheet">
+    <link href="../../css/nucleus.css?1583741778" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1583741778" rel="stylesheet">
+    <link href="../../css/hybrid.css?1583741778" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1583741778" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1583741778" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1583741778" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1583741778" rel="stylesheet">
+    <link href="../../css/theme.css?1583741778" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1583741778" rel="stylesheet">
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1582988856"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1583741778"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -45,7 +45,8 @@
   <div id="header-wrapper">
     <div id="header">
       <a id="logo" href="https://echebbi.github.io/ale-lang-docs/"/>
-<img src="https://echebbi.github.io/ale-lang-docs/images/logo.png"/>
+    <img src="https://echebbi.github.io/ale-lang-docs/images/logo.png"/>
+</a>
     </div>
     
         <div class="searchbox">
@@ -54,14 +55,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1582988856"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1582988856"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1583741778"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1583741778"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/echebbi.github.io\/ale-lang-docs\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1582988856"></script>
+<script type="text/javascript" src="../../js/search.js?1583741778"></script>
 
     
   </div>
@@ -306,13 +307,13 @@
  
   
     
-    <li data-nav-id="/reference/" title="Reference" class="dd-item 
+    <li data-nav-id="/reference/" title="Language Reference" class="dd-item 
         parent
         
         
         ">
       <a href="../../reference/">
-          <b>4. </b>Reference
+          <b>4. </b>Language Reference
           
       </a>
       
@@ -353,6 +354,25 @@
       <li data-nav-id="/reference/syntax/" title="Syntax" class="dd-item active">
         <a href="../../reference/syntax/">
         Syntax
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/reference/aql_cheatsheet/" title="AQL cheatsheets" class="dd-item ">
+        <a href="../../reference/aql_cheatsheet/">
+        AQL cheatsheets
         
         </a>
     </li>
@@ -447,7 +467,7 @@
             
           
           
-            <a href='../../'></a> > <a href='../../reference/'>Reference</a> > Syntax
+            <a href='../../'></a> > <a href='../../reference/'>Language Reference</a> > Syntax
           
          
           
@@ -498,6 +518,13 @@
         <li><a href="#declaring-bidirectional-references">Declaring bidirectional references</a></li>
         <li><a href="#declaring-a-set">Declaring a set</a></li>
         <li><a href="#implementing-an-eoperation">Implementing an EOperation</a></li>
+        <li><a href="#inheriting-open-classes">Inheriting open classes</a></li>
+      </ul>
+    </li>
+    <li><a href="#misc">Misc</a>
+      <ul>
+        <li><a href="#calling-java-code">Calling Java code</a></li>
+        <li><a href="#printing-to-the-console">Printing to the console</a></li>
       </ul>
     </li>
   </ul>
@@ -1430,9 +1457,13 @@ class ChildNode {
         result := self.radius * PI * 2;
     }
 }
-</code></pre><p>{% /unsafeExpand %}</p>
+</code></pre>
+    </div>
+</div>
+
 <div class="notices tip" ><p>See also <a href="#defining-operations">defining operations</a> for further details about operation syntax.</p>
 </div>
+
 <h3 id="inheriting-open-classes">Inheriting open classes</h3>
 <p>The <code>extends</code> keyword allows to extend an open class with another open class.</p>
 <p>When writing an Open Class you may want to specialize one (or more) existing open class.
@@ -1445,98 +1476,58 @@ The new Open Class reuses all the inherited content, declares new features/opera
 </code></pre><p><code>&lt;name&gt;</code> is the name of the extending class.</p>
 <p><code>&lt;open_class_1&gt;</code> is the name of the open class being extended. An open class may inherit from several open classes; in such a case the name of the extended classes must be separated by commas (<code>,</code>).</p>
 <p>Any open class from the same file can be extended.</p>
+
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
         <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
         <span>
-<pre><code>    &lt;b&gt;Example&lt;/b&gt;
-	
-    &lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&quot;expand-content&quot; style=&quot;display: none;&quot;&gt;
-    &lt;pre&gt;&lt;code&gt;open class State {
-override String execute() {
-    result := 'State ' + self.name;
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>open class State {
+    override String execute() {
+        result := 'State ' + self.name;
+    }
+}
+
+open class Initial extends State {
+    override String execute() {
+        result := 'Initial State ' + self.name;
+    }
 }
 </code></pre>
-<p>}</p>
-<p>open class Initial extends State {
-override String execute() {
-result := &lsquo;Initial State ' + self.name;
-}
-}
-</code></pre>
-</div></p>
+    </div>
 </div>
 <p>Classes from other files can be extended too but must be imported first (see <a href="#importing-an-existing-class">importing an existing class</a>).</p>
+
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
         <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
         <span>
-<pre><code>    &lt;b&gt;Example&lt;/b&gt;
-	
-    &lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&quot;expand-content&quot; style=&quot;display: none;&quot;&gt;
-    &lt;pre&gt;&lt;code&gt;behavior fsm.composite.executable;
-</code></pre>
-<p>import fsm.executable as simplefsm;</p>
-<p>open class CompositeState extends simplefsm.State {
-override void exec() {
-// Redefine the behavior here
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>behavior fsm.composite.executable;
+
+import fsm.executable as simplefsm;
+
+open class CompositeState extends simplefsm.State {
+    override void exec() {
+        // Redefine the behavior here
+    }
 }
-}
 </code></pre>
-</div></p>
+    </div>
 </div>
 <hr>
-<h2 id="aql">AQL</h2>
-<p>Some cheatsheets on AQL expressions</p>
-<p>See <a href="https://www.eclipse.org/acceleo/documentation/aql.html#SyntaxReference">AQL syntax reference</a> for more details.</p>
-<h3 id="type-of">Type of</h3>
-<pre><code>anEPackage.oclIsKindOf(ecore::ENamedElement) //true
-anEPackage.oclIsTypeOf(ecore::ENamedElement) //false
-</code></pre><h3 id="services-for-collections">Services for collections</h3>
-<pre><code>OrderedSet{'a', 'b', 'c'} + OrderedSet{'c', 'b', 'f'}
-Sequence{'a', 'b', 'c'}-&gt;any(str | str.size() = 1)
-Sequence{'a', 'b', 'c'}-&gt;asOrderedSet()
-OrderedSet{'a', 'b', 'c'}-&gt;asSequence()
-Sequence{'a', 'b', 'c', 'c', 'a'}-&gt;asSet()
-Sequence{'a', 'b', 'c'}-&gt;at(1)
-Sequence{'a', 'b', 'c'}-&gt;collect(str | str.toUpper())
-OrderedSet{'a', 'b', 'c'}-&gt;concat(Sequence{'d', 'e'})
-OrderedSet{'a', 'b', 'c'}-&gt;count('d')
-Sequence{'a', 'b', 'c'}-&gt;excludes('a')
-Sequence{'a', 'b'}-&gt;excludesAll(OrderedSet{'a','f'})
-OrderedSet{'a', 'b', 'c'}-&gt;excluding('c')
-Sequence{'a', 'b', 'c'}-&gt;exists(str | str.size() &gt; 5)
-Sequence{anEClass, anEAttribute}-&gt;filter(ecore::EStructuralFeature)
-Sequence{'a', 'b', 'c'}-&gt;first()
-Sequence{'a', 'b', 'c'}-&gt;forAll(str | str.size() = 1)
-Sequence{'a', 'b', 'c'}-&gt;includes('d')
-Sequence{'a', 'b', 'c'}-&gt;includesAll(OrderedSet{'a', 'f'})
-OrderedSet{1, 2, 3, 4}-&gt;indexOf(3)
-OrderedSet{'a', 'b', 'c'}-&gt;insertAt(2, 'f')
-OrderedSet{'a', 'b', 'c'}-&gt;intersection(OrderedSet{'a', 'f'})
-OrderedSet{'a', 'b', 'c'}-&gt;isEmpty()
-Sequence{'a', 'b', 'c'}-&gt;isUnique(str | str.size())
-Sequence{'a', 'b', 'c'}-&gt;last()
-OrderedSet{'a', 'b', 'c'}-&gt;notEmpty()
-Sequence{'a', 'b', 'c'}-&gt;one(str | str.equals('a'))
-OrderedSet{'a', 'b', 'c'}-&gt;prepend('f')
-OrderedSet{'a', 'b', 'c'}-&gt;reject(str | str.equals('a'))
-OrderedSet{'a', 'b', 'c'}-&gt;reverse()
-Sequence{'a', 'b', 'c'}-&gt;select(str | str.equals('a'))
-Sequence{'a', 'b', 'c'}-&gt;sep('[', '-', ']')
-Sequence{'a', 'b', 'c'}-&gt;sep('-')
-Sequence{'a', 'b', 'c'}-&gt;size()
-Sequence{'aa', 'bbb', 'c'}-&gt;sortedBy(str | str.size())
-Sequence{'a', 'b', 'c'} - Sequence{'c', 'b', 'f'}
-OrderedSet{'a', 'b', 'c'}-&gt;subOrderedSet(1, 2)
-Sequence{'a', 'b', 'c'}-&gt;subSequence(1, 2)
-Sequence{1, 2, 3, 4}-&gt;sum()
-Sequence{'a', 'b', 'c'}-&gt;union(Sequence{'d', 'c'})
-</code></pre><hr>
 <h2 id="misc">Misc</h2>
 <h3 id="calling-java-code">Calling Java code</h3>
 <p>ALE offers the possibility to call static methods written in Java from the body of an EOperation.</p>
@@ -1563,21 +1554,21 @@ The only requirement is that <code>MyService</code> has to be in the classpath o
 
 </code></pre><h3 id="printing-to-the-console">Printing to the console</h3>
 <p>ALE provides the <code>log()</code> method that can be used on String instances to print themselves to the console.</p>
+
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
         <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
         <span>
-<pre><code>    &lt;b&gt;Example&lt;/b&gt;
-	
-    &lt;/span&gt;
-&lt;/div&gt;
-&lt;div class=&quot;expand-content&quot; style=&quot;display: none;&quot;&gt;
-    &lt;pre&gt;&lt;code&gt;'Hello World!'.log();
+        
+    	
+    	<b>Example</b>
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <pre><code>'Hello World!'.log();
+('' + 42).log();
 </code></pre>
-<p>(&rsquo;&rsquo; + 42).log();
-</code></pre>
-</div></p>
-</div>
     </div>
 </div>
 
@@ -1825,6 +1816,25 @@ The only requirement is that <code>MyService</code> has to be in the classpath o
             
         
                     
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1840,7 +1850,7 @@ The only requirement is that <code>MyService</code> has to be in the classpath o
 			<a class="nav nav-prev" href="../../reference/file-extensions/" title="File extensions"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../reference/file-extensions/" title="File extensions" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../reference/aql_cheatsheet/" title="AQL cheatsheets" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -1850,19 +1860,19 @@ The only requirement is that <code>MyService</code> has to be in the classpath o
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1582988856"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1582988856"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1582988856"></script>
-    <script src="../../js/jquery.sticky.js?1582988856"></script>
-    <script src="../../js/featherlight.min.js?1582988856"></script>
-    <script src="../../js/highlight.pack.js?1582988856"></script>
+    <script src="../../js/clipboard.min.js?1583741781"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1583741781"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1583741781"></script>
+    <script src="../../js/jquery.sticky.js?1583741781"></script>
+    <script src="../../js/featherlight.min.js?1583741781"></script>
+    <script src="../../js/highlight.pack.js?1583741781"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1582988856"></script>
-    <script src="../../js/learn.js?1582988856"></script>
-    <script src="../../js/hugo-learn.js?1582988856"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1583741781"></script>
+    <script src="../../js/learn.js?1583741781"></script>
+    <script src="../../js/hugo-learn.js?1583741781"></script>
 
-    <link href="../../mermaid/mermaid.css?1582988856" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1582988856"></script>
+    <link href="../../mermaid/mermaid.css?1583741781" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1583741781"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -93,6 +93,16 @@ Manuel Leduc, Thomas Degueule, Benoit Combemale, Tijs van der Storm, Olivier Bar
     </item>
     
     <item>
+      <title>AQL cheatsheets</title>
+      <link>https://echebbi.github.io/ale-lang-docs/reference/aql_cheatsheet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://echebbi.github.io/ale-lang-docs/reference/aql_cheatsheet/</guid>
+      <description>See AQL syntax reference for an in-depth presentation of the language.
+ Type of anEPackage.oclIsKindOf(ecore::ENamedElement) // trueanEPackage.oclIsTypeOf(ecore::ENamedElement) // falseServices for collections OrderedSet{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;} + OrderedSet{&#39;c&#39;, &#39;b&#39;, &#39;f&#39;}Sequence{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;any(str | str.size() = 1)Sequence{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;asOrderedSet()OrderedSet{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;asSequence()Sequence{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;c&#39;, &#39;a&#39;}-&amp;gt;asSet()Sequence{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;at(1)Sequence{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;collect(str | str.toUpper())OrderedSet{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;concat(Sequence{&#39;d&#39;, &#39;e&#39;})OrderedSet{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;count(&#39;d&#39;)Sequence{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;excludes(&#39;a&#39;)Sequence{&#39;a&#39;, &#39;b&#39;}-&amp;gt;excludesAll(OrderedSet{&#39;a&#39;,&#39;f&#39;})OrderedSet{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;excluding(&#39;c&#39;)Sequence{&#39;a&#39;, &#39;b&#39;, &#39;c&#39;}-&amp;gt;exists(str | str.</description>
+    </item>
+    
+    <item>
       <title>Java API</title>
       <link>https://echebbi.github.io/ale-lang-docs/features/java-api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
