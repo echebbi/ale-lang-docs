@@ -22,6 +22,7 @@ The following table lists ALE's reserved keywords. They cannot be use to name at
 | [opposite](#declaring-bidirectional-references) | Indicates that a reference is bidirectional               |
 | [override](#implementing-an-eoperation)         | Specifies the semantics of an existing operation          |
 | self                                            | Represents the current instance                           |
+| [switch](#switch-expressions) | Declares a switch expression
 | true                                            | Represents a true expression                              |
 | [unique](#declaring-a-set)                      | Indicates that a collection should not contain duplicates |
 | [use](#calling-java-code)                       | Imports a Java service                                    |
@@ -307,6 +308,37 @@ while (isRaining) {
 }
 ```
 {{% /unsafeExpand %}}
+
+### Switch expressions
+
+The `switch` keyword allows to declare switch expressions:
+
+```
+int i := 2;
+int square :=
+    switch (var) {
+        case 2 : 4
+        case 3 : 9
+        default : 0
+    };
+
+square.log(); // prints '4'
+```
+
+Instead of expressions, it is also possible to guard on type:
+
+```
+int i := 2;
+String type :=
+    switch (var) {
+        case int    : 'int'
+        case String : 'String'
+        case EClass : 'EClass'
+        default : 0
+    };
+
+square.log(); // prints 'int'
+```
 
 Classes and operations
 ----------------------
